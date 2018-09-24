@@ -1,0 +1,5 @@
+﻿<configuration>
+  <appSettings>
+    <add key="RestServiceAddress" value="http://localhost:50500/SecurityVisionService/" />
+  </appSettings>
+</configuration>

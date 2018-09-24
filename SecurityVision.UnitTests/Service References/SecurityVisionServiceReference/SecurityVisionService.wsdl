@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="SecurityVisionService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:50500/SecurityVisionService.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:50500/SecurityVisionService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:50500/SecurityVisionService.svc?xsd=xsd2" namespace="SecurityVisionService" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="ISecurityVisionService_GetAllOrder_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllOrder" />
+  </wsdl:message>
+  <wsdl:message name="ISecurityVisionService_GetAllOrder_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllOrderResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISecurityVisionService_GetOrder_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetOrder" />
+  </wsdl:message>
+  <wsdl:message name="ISecurityVisionService_GetOrder_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetOrderResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISecurityVisionService_CreateOrder_InputMessage">
+    <wsdl:part name="parameters" element="tns:CreateOrder" />
+  </wsdl:message>
+  <wsdl:message name="ISecurityVisionService_CreateOrder_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CreateOrderResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISecurityVisionService_DeleteOrder_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteOrder" />
+  </wsdl:message>
+  <wsdl:message name="ISecurityVisionService_DeleteOrder_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteOrderResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISecurityVisionService_UpdateOrder_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateOrder" />
+  </wsdl:message>
+  <wsdl:message name="ISecurityVisionService_UpdateOrder_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateOrderResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISecurityVisionService_GetAllProduct_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllProduct" />
+  </wsdl:message>
+  <wsdl:message name="ISecurityVisionService_GetAllProduct_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllProductResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISecurityVisionService_GetProductByOrderId_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetProductByOrderId" />
+  </wsdl:message>
+  <wsdl:message name="ISecurityVisionService_GetProductByOrderId_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetProductByOrderIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISecurityVisionService_GetProduct_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetProduct" />
+  </wsdl:message>
+  <wsdl:message name="ISecurityVisionService_GetProduct_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetProductResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISecurityVisionService_CreateProduct_InputMessage">
+    <wsdl:part name="parameters" element="tns:CreateProduct" />
+  </wsdl:message>
+  <wsdl:message name="ISecurityVisionService_CreateProduct_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CreateProductResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISecurityVisionService_DeleteProduct_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteProduct" />
+  </wsdl:message>
+  <wsdl:message name="ISecurityVisionService_DeleteProduct_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteProductResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISecurityVisionService_UpdateProduct_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateProduct" />
+  </wsdl:message>
+  <wsdl:message name="ISecurityVisionService_UpdateProduct_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateProductResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISecurityVisionService_GetAllProductDescriptor_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllProductDescriptor" />
+  </wsdl:message>
+  <wsdl:message name="ISecurityVisionService_GetAllProductDescriptor_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllProductDescriptorResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISecurityVisionService_GetProductDescriptor_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetProductDescriptor" />
+  </wsdl:message>
+  <wsdl:message name="ISecurityVisionService_GetProductDescriptor_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetProductDescriptorResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISecurityVisionService_CreateProductDescriptor_InputMessage">
+    <wsdl:part name="parameters" element="tns:CreateProductDescriptor" />
+  </wsdl:message>
+  <wsdl:message name="ISecurityVisionService_CreateProductDescriptor_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CreateProductDescriptorResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISecurityVisionService_DeleteProductDescriptor_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteProductDescriptor" />
+  </wsdl:message>
+  <wsdl:message name="ISecurityVisionService_DeleteProductDescriptor_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteProductDescriptorResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISecurityVisionService_UpdateProductDescriptor_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateProductDescriptor" />
+  </wsdl:message>
+  <wsdl:message name="ISecurityVisionService_UpdateProductDescriptor_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateProductDescriptorResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ISecurityVisionService">
+    <wsdl:operation name="GetAllOrder">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOrderService/GetAllOrder" message="tns:ISecurityVisionService_GetAllOrder_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOrderService/GetAllOrderResponse" message="tns:ISecurityVisionService_GetAllOrder_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetOrder">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOrderService/GetOrder" message="tns:ISecurityVisionService_GetOrder_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOrderService/GetOrderResponse" message="tns:ISecurityVisionService_GetOrder_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateOrder">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOrderService/CreateOrder" message="tns:ISecurityVisionService_CreateOrder_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOrderService/CreateOrderResponse" message="tns:ISecurityVisionService_CreateOrder_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteOrder">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOrderService/DeleteOrder" message="tns:ISecurityVisionService_DeleteOrder_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOrderService/DeleteOrderResponse" message="tns:ISecurityVisionService_DeleteOrder_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateOrder">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOrderService/UpdateOrder" message="tns:ISecurityVisionService_UpdateOrder_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOrderService/UpdateOrderResponse" message="tns:ISecurityVisionService_UpdateOrder_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllProduct">
+      <wsdl:input wsaw:Action="http://tempuri.org/IProductService/GetAllProduct" message="tns:ISecurityVisionService_GetAllProduct_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IProductService/GetAllProductResponse" message="tns:ISecurityVisionService_GetAllProduct_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetProductByOrderId">
+      <wsdl:input wsaw:Action="http://tempuri.org/IProductService/GetProductByOrderId" message="tns:ISecurityVisionService_GetProductByOrderId_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IProductService/GetProductByOrderIdResponse" message="tns:ISecurityVisionService_GetProductByOrderId_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetProduct">
+      <wsdl:input wsaw:Action="http://tempuri.org/IProductService/GetProduct" message="tns:ISecurityVisionService_GetProduct_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IProductService/GetProductResponse" message="tns:ISecurityVisionService_GetProduct_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateProduct">
+      <wsdl:input wsaw:Action="http://tempuri.org/IProductService/CreateProduct" message="tns:ISecurityVisionService_CreateProduct_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IProductService/CreateProductResponse" message="tns:ISecurityVisionService_CreateProduct_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteProduct">
+      <wsdl:input wsaw:Action="http://tempuri.org/IProductService/DeleteProduct" message="tns:ISecurityVisionService_DeleteProduct_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IProductService/DeleteProductResponse" message="tns:ISecurityVisionService_DeleteProduct_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateProduct">
+      <wsdl:input wsaw:Action="http://tempuri.org/IProductService/UpdateProduct" message="tns:ISecurityVisionService_UpdateProduct_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IProductService/UpdateProductResponse" message="tns:ISecurityVisionService_UpdateProduct_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllProductDescriptor">
+      <wsdl:input wsaw:Action="http://tempuri.org/IProductDescriptorService/GetAllProductDescriptor" message="tns:ISecurityVisionService_GetAllProductDescriptor_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IProductDescriptorService/GetAllProductDescriptorResponse" message="tns:ISecurityVisionService_GetAllProductDescriptor_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetProductDescriptor">
+      <wsdl:input wsaw:Action="http://tempuri.org/IProductDescriptorService/GetProductDescriptor" message="tns:ISecurityVisionService_GetProductDescriptor_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IProductDescriptorService/GetProductDescriptorResponse" message="tns:ISecurityVisionService_GetProductDescriptor_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateProductDescriptor">
+      <wsdl:input wsaw:Action="http://tempuri.org/IProductDescriptorService/CreateProductDescriptor" message="tns:ISecurityVisionService_CreateProductDescriptor_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IProductDescriptorService/CreateProductDescriptorResponse" message="tns:ISecurityVisionService_CreateProductDescriptor_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteProductDescriptor">
+      <wsdl:input wsaw:Action="http://tempuri.org/IProductDescriptorService/DeleteProductDescriptor" message="tns:ISecurityVisionService_DeleteProductDescriptor_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IProductDescriptorService/DeleteProductDescriptorResponse" message="tns:ISecurityVisionService_DeleteProductDescriptor_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateProductDescriptor">
+      <wsdl:input wsaw:Action="http://tempuri.org/IProductDescriptorService/UpdateProductDescriptor" message="tns:ISecurityVisionService_UpdateProductDescriptor_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IProductDescriptorService/UpdateProductDescriptorResponse" message="tns:ISecurityVisionService_UpdateProductDescriptor_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:service name="SecurityVisionService" />
+</wsdl:definitions>

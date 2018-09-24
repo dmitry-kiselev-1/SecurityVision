@@ -1,0 +1,19 @@
+﻿<UserControl
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:view="clr-namespace:SecurityVision.SilverlightClient.View" 
+    x:Class="SecurityVision.SilverlightClient.MainPage"
+    mc:Ignorable="d">
+    <Grid HorizontalAlignment="Left" VerticalAlignment="Top" Background="White">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <view:OrderView Name="OrderViewControl" Grid.Row="0" Margin="20,20,20,20"></view:OrderView>
+        <view:ProductView Name="ProductViewControl" Grid.Row="1" Margin="20,20,20,20" Loaded="ProductView_Loaded"></view:ProductView>
+    </Grid>
+
+</UserControl>

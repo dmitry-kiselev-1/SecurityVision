@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="NameAndType">
+  <Class Name="SecurityVision.DomainModelLayer.Order">
+    <Position X="6.25" Y="4.25" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIBAAAgAAAAgAAAAAAAAAACAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Order.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="SecurityVision.DomainModelLayer.Product">
+    <Position X="3" Y="4.25" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>ECEAAAAAAAAAAAAAgAAAAAAAAAEAAAAAAACAAAAAAAA=</HashCode>
+      <FileName>Product.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="SecurityVision.DomainModelLayer.ProductDescriptor">
+    <Position X="9.75" Y="4.25" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAABAAAgAAAAgAAAABQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ProductDescriptor.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="SecurityVision.DomainModelLayer.ProductBase" Collapsed="true">
+    <Position X="4" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ProductBase.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SecurityVision.DomainModelLayer.OrderBase" Collapsed="true">
+    <Position X="7" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>OrderBase.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SecurityVision.DomainModelLayer.ProductDescriptorBase" Collapsed="true">
+    <Position X="10.25" Y="2.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ProductDescriptorBase.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SecurityVision.DomainModelLayer.EntityBase">
+    <Position X="7.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>EntityBase.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

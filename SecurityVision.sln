@@ -1,0 +1,59 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SecurityVision.DomainModelLayer", "SecurityVision.DomainModelLayer\SecurityVision.DomainModelLayer.csproj", "{D9320933-30B1-40B5-A69C-566EF97123FD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SecurityVision.DataAccessLayer", "SecurityVision.DataAccessLayer\SecurityVision.DataAccessLayer.csproj", "{15E761A4-9799-4676-82EE-010A18F88E3C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SecurityVision.UnitTests", "SecurityVision.UnitTests\SecurityVision.UnitTests.csproj", "{278D9642-9699-40B3-9B27-8AFACE07A118}"
+	ProjectSection(ProjectDependencies) = postProject
+		{A6AB88F8-9E91-448C-B3AE-5A2B546C2262} = {A6AB88F8-9E91-448C-B3AE-5A2B546C2262}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SecurityVision.ServiceLayer", "SecurityVision.ServiceLayer\SecurityVision.ServiceLayer.csproj", "{A6AB88F8-9E91-448C-B3AE-5A2B546C2262}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SecurityVision.SilverlightClient", "SecurityVision.SilverlightClient\SecurityVision.SilverlightClient.csproj", "{28BF36B0-C7B8-46A0-893C-DCCA385F7F19}"
+	ProjectSection(ProjectDependencies) = postProject
+		{A6AB88F8-9E91-448C-B3AE-5A2B546C2262} = {A6AB88F8-9E91-448C-B3AE-5A2B546C2262}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SecurityVision.SilverlightClient.Host", "SecurityVision.SilverlightClient.Host\SecurityVision.SilverlightClient.Host.csproj", "{E3997975-5D0D-44DA-A717-07A1246EBF4B}"
+	ProjectSection(ProjectDependencies) = postProject
+		{A6AB88F8-9E91-448C-B3AE-5A2B546C2262} = {A6AB88F8-9E91-448C-B3AE-5A2B546C2262}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D9320933-30B1-40B5-A69C-566EF97123FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D9320933-30B1-40B5-A69C-566EF97123FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D9320933-30B1-40B5-A69C-566EF97123FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D9320933-30B1-40B5-A69C-566EF97123FD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{15E761A4-9799-4676-82EE-010A18F88E3C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{15E761A4-9799-4676-82EE-010A18F88E3C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{15E761A4-9799-4676-82EE-010A18F88E3C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{15E761A4-9799-4676-82EE-010A18F88E3C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{278D9642-9699-40B3-9B27-8AFACE07A118}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{278D9642-9699-40B3-9B27-8AFACE07A118}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{278D9642-9699-40B3-9B27-8AFACE07A118}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{278D9642-9699-40B3-9B27-8AFACE07A118}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A6AB88F8-9E91-448C-B3AE-5A2B546C2262}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A6AB88F8-9E91-448C-B3AE-5A2B546C2262}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A6AB88F8-9E91-448C-B3AE-5A2B546C2262}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A6AB88F8-9E91-448C-B3AE-5A2B546C2262}.Release|Any CPU.Build.0 = Release|Any CPU
+		{28BF36B0-C7B8-46A0-893C-DCCA385F7F19}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{28BF36B0-C7B8-46A0-893C-DCCA385F7F19}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{28BF36B0-C7B8-46A0-893C-DCCA385F7F19}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{28BF36B0-C7B8-46A0-893C-DCCA385F7F19}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E3997975-5D0D-44DA-A717-07A1246EBF4B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E3997975-5D0D-44DA-A717-07A1246EBF4B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E3997975-5D0D-44DA-A717-07A1246EBF4B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E3997975-5D0D-44DA-A717-07A1246EBF4B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

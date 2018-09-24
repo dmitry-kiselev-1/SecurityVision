@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="882ed07f-ccfa-412d-b216-a030a8e9e400" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>true</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.ObjectModel.ObservableCollection`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>false</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:50500/SecurityVisionService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="SecurityVisionService.xsd" MetadataType="Schema" ID="4b5dfaa9-eebe-4ccc-a469-5dac8a87006a" SourceId="1" SourceUrl="http://localhost:50500/SecurityVisionService.svc?xsd=xsd2" />
+    <MetadataFile FileName="SecurityVisionService1.xsd" MetadataType="Schema" ID="f621e956-31fd-48f5-9ce5-4840220df807" SourceId="1" SourceUrl="http://localhost:50500/SecurityVisionService.svc?xsd=xsd1" />
+    <MetadataFile FileName="SecurityVisionService2.xsd" MetadataType="Schema" ID="f23456e3-a00c-4b73-b44d-ef684baa96a7" SourceId="1" SourceUrl="http://localhost:50500/SecurityVisionService.svc?xsd=xsd0" />
+    <MetadataFile FileName="SecurityVisionService.disco" MetadataType="Disco" ID="1db5a355-86ac-4c76-925f-3aedc46a2350" SourceId="1" SourceUrl="http://localhost:50500/SecurityVisionService.svc?disco" />
+    <MetadataFile FileName="SecurityVisionService.wsdl" MetadataType="Wsdl" ID="9e66281b-01c6-4048-90db-06857a6d5634" SourceId="1" SourceUrl="http://localhost:50500/SecurityVisionService.svc?wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>
